@@ -65,7 +65,8 @@ export function Contact() {
       },
     },
   };
-
+  const emailId = import.meta.env.VITE_CONTACT_EMAIL;
+  const phone = import.meta.env.VITE_CONTACT_PHONE;
   return (
     <section className="px-4 py-16 md:py-24 max-w-[1200px] mx-auto text-gray-200 font-sans relative bg-transparent">
       <motion.div 
@@ -199,7 +200,7 @@ export function Contact() {
                   <Mail size={18} className="text-[#D4AF37] group-hover:scale-110 transition-transform duration-300" strokeWidth={2} />
                 </div>
                 <span className="text-sm text-gray-300 font-medium group-hover:text-white transition-colors" style={{ fontFamily: "'Inter', sans-serif" }}>
-                  swapnanilsarkar26@gmail.com
+                  {emailId}
                 </span>
               </div>
               <div className="flex items-center gap-3 group cursor-pointer">
@@ -207,7 +208,7 @@ export function Contact() {
                   <Phone size={18} className="text-[#D4AF37] group-hover:scale-110 transition-transform duration-300" strokeWidth={2} />
                 </div>
                 <span className="text-sm text-gray-300 font-medium group-hover:text-white transition-colors" style={{ fontFamily: "'Inter', sans-serif" }}>
-                  +1 555-012-3456
+                  {phone}
                 </span>
               </div>
             </div>
