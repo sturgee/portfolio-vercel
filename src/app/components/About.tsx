@@ -116,7 +116,7 @@ export function About() {
                   <Sparkles size={18} />
                   <span className="text-xs font-bold tracking-widest uppercase" style={{ fontFamily: "'Inter', sans-serif" }}>Vision 01</span>
                 </div>
-                <div className="text-xs tracking-widest text-gray-400 font-mono">BYTERS.DEV</div>
+                <div className="text-xs tracking-widest text-gray-400 font-mono">BYTERS.TECH</div>
               </div>
             </div>
           </motion.div>
